@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="TheMageLover_AdminCronManagement::cron_scheduled_jobs" title="Cron Scheduled Jobs"
+             module="TheMageLover_AdminCronManagement" sortOrder="200" action="cronmanagement/jobs"
+             resource="TheMageLover_AdminCronManagement::cron_scheduled_jobs" parent="Magento_Backend::system_tools"/>
+        <add id="TheMageLover_AdminCronManagement::cron_executor" title="Cron Executor"
+             module="TheMageLover_AdminCronManagement" sortOrder="210" action="cronmanagement/executor"
+             resource="TheMageLover_AdminCronManagement::cron_executor" parent="Magento_Backend::system_tools"/>
+    </menu>
+</config>

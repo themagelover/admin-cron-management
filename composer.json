@@ -1,0 +1,29 @@
+{
+    "name": "themagelover/admin-cron-management",
+    "version": "1.0.0",
+    "description": "Manage Cron Job on the Admin Panel. Check the Cron Status, and run a specific cron.",
+    "type": "magento2-module",
+    "require": {
+        "php": ">=7.2",
+        "magento/framework": "*",
+        "magento/module-backend": "^101|^102",
+        "magento/module-cron": "^100"
+    },
+    "license": [
+        "OSL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "themagelover",
+            "email": "conghung2702@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "TheMageLover\\AdminCronManagement\\": ""
+        }
+    }
+}
