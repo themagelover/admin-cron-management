@@ -67,7 +67,7 @@ class ExecutorProvider extends AbstractDataProvider
             case 'like':
                 $filterData['filter'] = function ($job) {
                     $currentRegister = $this->currentFilter;
-                    return str_contains($job[$currentRegister['field']], $currentRegister['value']);
+                    return strpos($job[$currentRegister['field']], $currentRegister['value']) !== false;
                 };
                 $filterData['value'] = trim($filterData['value'], "%");
                 $this->filterRegistry[] = $filterData;
@@ -138,11 +138,12 @@ class ExecutorProvider extends AbstractDataProvider
             return 0;
         });
 
+        $totalRecords = count($items);
         // Paging
         $items = array_slice($items, ($this->offset - 1) * $this->size, $this->size);
 
         return [
-            'totalRecords' => count($items),
+            'totalRecords' => $totalRecords,
             'items' => $items
         ];
     }

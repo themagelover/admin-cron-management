@@ -107,7 +107,7 @@ class Data extends AbstractHelper
         $job = $this->getJobByName($jobName);
 
         // Check required values
-        if ($job == null || $job['group'] = null || $job['name'] == null) {
+        if ($job == null || $job['group'] == null || $job['name'] == null) {
             return false;
         }
 
@@ -152,7 +152,7 @@ class Data extends AbstractHelper
                 if (is_array($value)) {
                     return in_array($item[$column], $value);
                 }
-                return str_contains($item[$column], $value);
+                return strpos($item[$column], $value) !== false;
             });
         }
         return array_column($allJobs, 'name');

@@ -2,11 +2,11 @@
 
 namespace TheMageLover\AdminCronManagement\Model;
 
-use Magento\Cron\Model\ResourceModel\Schedule\Collection;
 use Magento\Cron\Model\Schedule;
 use Magento\Framework\ObjectManagerInterface;
 use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
 use TheMageLover\AdminCronManagement\Helper\Data;
+use TheMageLover\AdminCronManagement\Model\ResourceModel\ScheduledJobs\Collection;
 
 /**
  * Class JobExecutor

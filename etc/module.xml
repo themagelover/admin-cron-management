@@ -3,7 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
     <module name="TheMageLover_AdminCronManagement">
         <sequence>
-            <module name="Magento_Backend"/>
             <module name="Magento_Cron"/>
         </sequence>
     </module>

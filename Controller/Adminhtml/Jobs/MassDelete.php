@@ -4,8 +4,8 @@ namespace TheMageLover\AdminCronManagement\Controller\Adminhtml\Jobs;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
-use Magento\Cron\Model\ResourceModel\Schedule\Collection;
-use Magento\Cron\Model\ResourceModel\Schedule\CollectionFactory;
+use TheMageLover\AdminCronManagement\Model\ResourceModel\ScheduledJobs\Collection;
+use TheMageLover\AdminCronManagement\Model\ResourceModel\ScheduledJobs\CollectionFactory;
 use Magento\Ui\Component\MassAction\Filter;
 
 /**
